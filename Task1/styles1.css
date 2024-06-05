@@ -1,0 +1,63 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 80vh;     */
+    margin: 0;
+    background-color: #f4f4f9;
+    font-family: Arial, sans-serif;
+}
+
+.calculator {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 450px; /* Increase the width */
+    box-sizing: border-box;
+}
+
+#display {
+    width: 100%;
+    height: 75px; /* Increase the height */
+    border: none;
+    font-size: 2em; /* Increase the font size */
+    text-align: right;
+    padding: 20px; /* Increase padding */
+    box-sizing: border-box;
+    margin-bottom: 20px; /* Increase bottom margin */
+    border-radius: 5px; /* Add border-radius */
+    background-color: lightgreen; /* Light background for contrast */
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1); /* Add inner shadow */
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px; /* Increase gap between buttons */
+}
+
+button {
+    background-color: #cdcdcd;
+    border: none;
+    padding: 10px; /* Increase padding */
+    font-size: 2em; /* Increase font size */
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s; /* Add transition for transform */
+    border-radius: 5px; /* Add border-radius */
+}
+
+button:hover {
+    background-color: #79b27f;
+    transform: scale(1.05); /* Scale up on hover */
+}
+
+button:active {
+    background-color: #e5ffcc;
+}
+
+button.enter {
+    grid-column: span 3;
+    background-color: lightgreen;
+    color: white;
+}
